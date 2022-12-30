@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { ComponentesModule } from './componentes/componentes.module';
 
 import { NgModule } from '@angular/core';
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComponentesModule
+    ComponentesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

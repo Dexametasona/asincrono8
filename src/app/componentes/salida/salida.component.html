@@ -14,7 +14,9 @@
       <td>{{x.nombre}}</td>
       <td>{{x.apellido}}</td>
       <td>{{x.edad}}</td>
-      <td></td>
+      <td> <p *ngIf="x.edad>=18; else contrario">{{x.nombre}} es mayor de edad</p><ng-template #contrario> {{x.nombre}} es menor de edad</ng-template></td>
+      
+
     </tr>
   </tbody>
 </table>

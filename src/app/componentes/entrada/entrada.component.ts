@@ -12,8 +12,15 @@ export class EntradaComponent implements OnInit {
     new Obreros('Lula', 'Da silva', 60),
   ]
 
-  añadir(){
-    this.obreros.push(new Obreros(nombre, apell, edad))
+  cuadroNombre:string='';
+  cuadroApell:string='';
+  cuadroEdad:number=0;
+
+  anadir(){
+    this.obreros.push(new Obreros(this.cuadroNombre, this.cuadroApell, this.cuadroEdad))
+    this.cuadroNombre='';
+    this.cuadroApell='';
+    this.cuadroEdad=0;
   }
 
   

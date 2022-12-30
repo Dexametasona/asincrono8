@@ -1,16 +1,16 @@
-<form>
+<div id="princ">
   <div class="my-3">
-    <input type="text" placeholder="Nombre" class="form-control" [(ngModel)]="caudronombre">
+    <input type="text" placeholder="Nombre" class="form-control" [(ngModel)]="cuadroNombre">
   </div>
   <div class="mb-3">
-    <input type="text" placeholder="apellido" class="form-control">
+    <input type="text" placeholder="apellido" class="form-control" [(ngModel)]="cuadroApell">
   </div>
   <div class="mb-3">
-    <input type="text" placeholder="edad" class="form-control">
+    <input type="number" placeholder="edad" class="form-control" [(ngModel)]="cuadroEdad">
   </div>
   <div class="mb-3">
-    <button class="btn btn-warning">Agregar obrero</button>
+    <button class="btn btn-warning" (click)="anadir()">Agregar obrero</button>
   </div>
-</form>
+</div>
 
 <app-salida [obreroshijo]="obreros"></app-salida>

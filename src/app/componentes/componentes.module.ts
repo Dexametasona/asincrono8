@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EntradaComponent } from './entrada/entrada.component';
@@ -11,7 +12,8 @@ import { SalidaComponent } from './salida/salida.component';
     SalidaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     EntradaComponent,
