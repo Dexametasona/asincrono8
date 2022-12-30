@@ -1,6 +1,6 @@
 <form>
   <div class="my-3">
-    <input type="text" placeholder="Nombre" class="form-control">
+    <input type="text" placeholder="Nombre" class="form-control" [(ngModel)]="caudronombre">
   </div>
   <div class="mb-3">
     <input type="text" placeholder="apellido" class="form-control">
@@ -13,4 +13,4 @@
   </div>
 </form>
 
-<app-salida></app-salida>
+<app-salida [obreroshijo]="obreros"></app-salida>

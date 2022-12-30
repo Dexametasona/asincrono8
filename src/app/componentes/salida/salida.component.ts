@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Obreros } from './../entrada/obrero.module';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-salida',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./salida.component.scss']
 })
 export class SalidaComponent implements OnInit {
+  @Input() obreroshijo:Obreros[]=[]
 
   constructor() { }
 
