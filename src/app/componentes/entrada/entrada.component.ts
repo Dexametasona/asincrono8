@@ -17,11 +17,18 @@ export class EntradaComponent implements OnInit {
   cuadroEdad:number=0;
 
   anadir(){
-    this.obreros.push(new Obreros(this.cuadroNombre, this.cuadroApell, this.cuadroEdad))
-    this.cuadroNombre='';
-    this.cuadroApell='';
-    this.cuadroEdad=0;
-  }
+    if(this.cuadroEdad>10){
+      this.obreros.push(new Obreros(this.cuadroNombre, this.cuadroApell, this.cuadroEdad))
+      this.cuadroNombre='';
+      this.cuadroApell='';
+      this.cuadroEdad=0;
+    }else{
+      alert('no se permiten edades negativa, ni obreros menores de 10años')
+      this.cuadroEdad=11;
+    }
+
+    }
+    
 
   
   constructor() { }
